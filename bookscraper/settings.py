@@ -1,3 +1,4 @@
+from config import API_Key
 # Scrapy settings for BookScraper project
 #
 # For simplicity, this file contains only settings considered important or
@@ -12,7 +13,7 @@ BOT_NAME = "bookscraper"
 SPIDER_MODULES = ["bookscraper.spiders"]
 NEWSPIDER_MODULE = "bookscraper.spiders"
 
-SCRAPEOPS_API_KEY = '515a083b-b3bf-4bc1-937f-1760db7771e4'
+SCRAPEOPS_API_KEY = API_Key
 SCRAPEOPS_FAKE_USER_AGENT_ENDPOINT = 'https://headers.scrapeops.io/v1/user-agents'
 SCRAPEOPS_FAKE_USER_AGENT_ENABLED = True
 SCRAPEOPS_NUM_RESULTS = 5
